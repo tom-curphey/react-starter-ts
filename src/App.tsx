@@ -7,12 +7,12 @@ import { GlobalStyle } from './styles/Global.styles';
 function App() {
   const [state, dispatch] = useReducer(appReducer, initialAppState);
   return (
-    <div>
+    <>
       <GlobalStyle />
       <AppContext.Provider value={{ ...state, dispatch }}>
         <Routes />
       </AppContext.Provider>
-    </div>
+    </>
   );
 }
 

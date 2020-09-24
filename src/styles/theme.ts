@@ -1,31 +1,35 @@
-const greyFaded = '#999'; //"#858585";
-const grey = '#666';
+const greyFaded = '#999';
+const grey = '#4d4d54';
+const greyDark = '#212129';
 const black = '#000';
-const primary = '#F98D0F';
-const secondary = '#1BAB3A';
+const primary = '#f98d0f';
+const secondary = '#FFFFFF';
+const alert = '#FFFFFF';
 const white = '#FFFFFF';
-const defaultLight = '#F1EDE7';
+const defaultLight = '#f5f5f5';
+export const fontFamily = 'Arial,sans-serif';
 
 export const theme = {
   colors: {
     primary: {
       default: primary,
-      faded: '#FABA6F',
-      dark: '#BF6B0C',
+      faded: '#DC1929',
+      dark: '#B71521',
     },
     secondary: {
       default: secondary,
-      faded: '#74B883',
-      dark: '#137B29',
+      faded: '#FFFFFF',
+      dark: '#FFFFFF',
     },
     default: {
-      default: '#CDC0B2',
-      faded: '#D7CCC1',
+      default: '#FFFFFF',
+      faded: '#FFFFFF',
       light: defaultLight,
     },
     grey: {
       default: grey,
       faded: greyFaded,
+      dark: greyDark,
     },
     white: {
       default: white,
@@ -38,20 +42,20 @@ export const theme = {
       grey: grey,
       secondary: secondary,
       primary: primary,
-      black: black,
+      black: greyDark,
       white: white,
-      error: 'red',
+      error: primary,
     },
     background: defaultLight,
-    brown: '#BF6B0C',
+    alert: alert,
     black: black,
   },
   font: {
-    fontFamily: 'Montserrat, sans-serif',
+    family: fontFamily,
     size: {
+      smaller: '13px',
+      small: '14px',
       default: '16px',
-      small: '13px',
-      button: '14px',
       medium: '20px',
       large: '24px',
       heading: '30px',
@@ -80,7 +84,8 @@ export const theme = {
     box: '0px 0px 25px rgba(0, 0, 0, 0.15);',
     smallBox: '4px 4px 15px 0 rgba(0, 0, 0, 0.15);',
     text: '0px 0px 25px rgba(0, 0, 0, 0.15);',
-    textHeading: '0px 0px 10px rgba(0,0,0,0.50);',
+    textHeading: '0px 0px 10px rgba(0, 0, 0, 0.50);',
+    dropShadow: '0px 8px 8px rgba(0, 0, 0, 0.25)',
   },
   iconSize: {
     tiny: '10px',

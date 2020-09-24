@@ -1,8 +1,16 @@
 import React from 'react';
-import { Container } from './Intro.styles';
+import { Header } from '../../shared/layout';
+import { PageLayout } from '../../shared/layout/LayoutStyles';
 
-export const Intro = () => {
-  return <Container> Intro </Container>;
+const Intro = () => {
+  return (
+    <PageLayout>
+      <Header
+        heading="Intro"
+        subHeading="This is the sub heading of the header section"
+      />
+    </PageLayout>
+  );
 };
 
 export default Intro;
